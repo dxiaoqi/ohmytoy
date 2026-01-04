@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button class="menu-button"><i class="fas fa-bars"></i></button>
+            <div class="logo">
+                <img src="https://www.youtube.com/yts/img/yt_1200-vfl4C3T0K.png" alt="YouTube Logo">
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <button class="create-button"><i class="fas fa-video"></i></button>
+            <button class="apps-button"><i class="fas fa-th"></i></button>
+            <button class="notifications-button"><i class="fas fa-bell"></i></button>
+            <button class="signin-button">Sign In</button>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-item active"><i class="fas fa-home"></i> Home</div>
+                <div class="sidebar-item"><i class="fas fa-fire"></i> Trending</div>
+                <div class="sidebar-item"><i class="fas fa-compass"></i> Explore</div>
+                <div class="sidebar-item"><i class="fas fa-subscriptions"></i> Subscriptions</div>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <div class="sidebar-item"><i class="fas fa-folder"></i> Library</div>
+                <div class="sidebar-item"><i class="fas fa-history"></i> History</div>
+                <div class="sidebar-item"><i class="fas fa-play-circle"></i> Your Videos</div>
+                <div class="sidebar-item"><i class="fas fa-clock"></i> Watch Later</div>
+                <div class="sidebar-item"><i class="fas fa-thumbs-up"></i> Liked Videos</div>
+                <div class="sidebar-item"><i class="fas fa-arrow-down"></i> Show More</div>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <h3>Subscriptions</h3>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Web Dev Tutorials</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Code Master</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Frontend Focus</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> React Experts</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> CSS Magic</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Backend Basics</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Tech Channel</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Another Channel</div>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <h3>Explore</h3>
+                <div class="sidebar-item"><i class="fas fa-music"></i> Music</div>
+                <div class="sidebar-item"><i class="fas fa-gamepad"></i> Gaming</div>
+                <div class="sidebar-item"><i class="fas fa-newspaper"></i> News</div>
+                <div class="sidebar-item"><i class="fas fa-trophy"></i> Sports</div>
+                <div class="sidebar-item"><i class="fas fa-film"></i> Movies</div>
+                <div class="sidebar-item"><i class="fas fa-broadcast-tower"></i> Live</div>
+                <div class="sidebar-item"><i class="fas fa-graduation-cap"></i> Learning</div>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <h3>More from YouTube</h3>
+                <div class="sidebar-item"><i class="fas fa-youtube"></i> YouTube Premium</div>
+                <div class="sidebar-item"><i class="fas fa-gamepad"></i> YouTube Gaming</div>
+                <div class="sidebar-item"><i class="fas fa-music"></i> YouTube Music</div>
+                <div class="sidebar-item"><i class="fas fa-child"></i> YouTube Kids</div>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <div class="sidebar-item"><i class="fas fa-cog"></i> Settings</div>
+                <div class="sidebar-item"><i class="fas fa-flag"></i> Report History</div>
+                <div class="sidebar-item"><i class="fas fa-question-circle"></i> Help</div>
+                <div class="sidebar-item"><i class="fas fa-moon"></i> Dark Mode</div>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <h3>Subscriptions</h3>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Channel Name</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Another Channel</div>
+                <div class="sidebar-item"><img src="https://via.placeholder.com/28x28" alt="Channel"> Tech Channel</div>
+            </div>
+        </aside>
+        <main>
+            <div class="categories">
+                <button class="category-button active">All</button>
+                <button class="category-button">Gaming</button>
+                <button class="category-button">Music</button>
+                <button class="category-button">News</button>
+                <button class="category-button">Sports</button>
+                <button class="category-button">Movies</button>
+                <button class="category-button">Live</button>
+                <button class="category-button">360° Video</button>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/000000/FFFFFF?text=Video+1" alt="Video Thumbnail">
+                        <span class="video-duration">12:34</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>How to Build a YouTube Clone with HTML, CSS, and JavaScript</h3>
+                            <p class="channel-name">Web Dev Tutorials</p>
+                            <p class="video-metadata">1.2M views • 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/FF0000/FFFFFF?text=Video+2" alt="Video Thumbnail">
+                        <span class="video-duration">8:45</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>JavaScript Tips and Tricks for Beginners</h3>
+                            <p class="channel-name">Code Master</p>
+                            <p class="video-metadata">850K views • 1 week ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/00FF00/000000?text=Video+3" alt="Video Thumbnail">
+                        <span class="video-duration">15:22</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>CSS Grid Layout Tutorial - Responsive Design</h3>
+                            <p class="channel-name">Frontend Focus</p>
+                            <p class="video-metadata">450K views • 3 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/0000FF/FFFFFF?text=Video+4" alt="Video Thumbnail">
+                        <span class="video-duration">22:10</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>React Hooks Explained - useState, useEffect, and More</h3>
+                            <p class="channel-name">React Experts</p>
+                            <p class="video-metadata">1.5M views • 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/FFFF00/000000?text=Video+5" alt="Video Thumbnail">
+                        <span class="video-duration">5:30</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>Quick HTML5 Tips for Better Web Development</h3>
+                            <p class="channel-name">HTML Pro</p>
+                            <p class="video-metadata">320K views • 5 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/FF00FF/FFFFFF?text=Video+6" alt="Video Thumbnail">
+                        <span class="video-duration">18:42</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>Advanced JavaScript: Closures and Prototypes</h3>
+                            <p class="channel-name">JS Deep Dive</p>
+                            <p class="video-metadata">680K views • 2 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/00FFFF/000000?text=Video+7" alt="Video Thumbnail">
+                        <span class="video-duration">3:15</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>CSS Animation Effects You Should Know</h3>
+                            <p class="channel-name">CSS Magic</p>
+                            <p class="video-metadata">210K views • 10 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/300x170/FFA500/000000?text=Video+8" alt="Video Thumbnail">
+                        <span class="video-duration">10:05</span>
+                    </div>
+                    <div class="video-info">
+                        <img src="https://via.placeholder.com/36x36" alt="Channel" class="channel-icon">
+                        <div class="video-details">
+                            <h3>Building REST APIs with Node.js and Express</h3>
+                            <p class="channel-name">Backend Basics</p>
+                            <p class="video-metadata">950K views • 3 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
