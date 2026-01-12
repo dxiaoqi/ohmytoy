@@ -1,0 +1,15 @@
+# Project-specific AI Agent Configuration
+# This file should be placed in .ai-agent/config.toml in your project root
+# Project configs override system-wide configs
+
+# API Configuration
+apiKey = "your-api-key-here"
+baseUrl = "https://api.openai.com/v1"
+
+# Model Configuration
+[model]
+name = "gpt-4"
+temperature = 1.0
+
+# Approval Policy
+approval = "on-request"

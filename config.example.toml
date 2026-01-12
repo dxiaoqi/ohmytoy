@@ -1,0 +1,76 @@
+# AI Agent Configuration Example
+
+# API Configuration
+# Priority: config file > environment variables
+apiKey = "your-api-key-here"
+baseUrl = "https://api.openai.com/v1"  # Optional, defaults to OpenAI if not set
+
+# Model Configuration
+[model]
+name = "gpt-4"
+temperature = 1.0
+context_window = 128000
+
+# Approval Policy
+# Options: on-request, on-failure, auto, auto-edit, never, yolo
+approval = "on-request"
+
+# Working Directory
+# cwd = "/path/to/working/directory"
+
+# Maximum turns per conversation
+maxTurns = 100
+
+# Debug mode (enables detailed logging)
+debug = false
+
+# Custom Subagents
+# Define custom subagents for specialized tasks
+[[subagents]]
+name = "test_runner"
+description = "Runs tests and reports results"
+goalPrompt = "You are a test runner. Execute tests and report results. Use shell commands to run tests."
+allowedTools = ["shell", "read_file", "grep"]
+maxTurns = 15
+timeoutSeconds = 300
+
+[[subagents]]
+name = "documentation_writer"
+description = "Writes documentation for code"
+goalPrompt = "You are a documentation specialist. Write clear and comprehensive documentation."
+allowedTools = ["read_file", "write_file", "grep", "list_dir"]
+maxTurns = 20
+timeoutSeconds = 600
+
+# MCP Server Configuration
+# Model Context Protocol servers provide additional tools
+[mcpServers.filesystem]
+enabled = true
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"]
+startupTimeoutSec = 10
+
+# [mcpServers.remote-server]
+# enabled = true
+# url = "https://example.com/mcp"
+# startupTimeoutSec = 10
+
+# Hooks Configuration
+hooksEnabled = true
+
+[[hooks]]
+name = "before_agent"
+trigger = "before_agent"
+command = "echo 'Agent starting'"
+timeoutSec = 30
+enabled = true
+
+# Tool Allowlist (optional)
+# If specified, only these tools will be available
+# allowedTools = ["read_file", "write_file", "shell"]
+
+# Developer Instructions
+# developerInstructions = "..."
+
+# User Instructions
+# userInstructions = "..."

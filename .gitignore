@@ -1,3 +1,53 @@
-__pycache__
-.git
-.venv/
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# Logs
+*.log
+hook.log
+
+# Environment
+.env
+
+# OS
+.DS_Store
+
+# Python files (ignore Python version)
+*.py
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+.pytest_cache/
+venv/
+env/
+ENV/
+
+# Test files
+test-*.ts
+test-*.js
+*-test.ts
+*-test.js
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+aa.md
